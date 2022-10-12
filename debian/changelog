@@ -1,0 +1,105 @@
+libtext-roman-perl (3.5-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 01:24:45 +0100
+
+libtext-roman-perl (3.5-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Axel Beckert ]
+  * Declare compliance with Debian Policy 4.1.1.
+  * Switch Homepage header and watch file to HTTPS.
+  * Mention module name in long package description.
+  * Mark package as autopkgtestable.
+  * Bump debhelper compatibility level to 10.
+    + Update versioned debhelper build-dependency accordingly.
+  * Convert debian/copyright to machine-readable DEP5 format.
+    + Fix license to be Perl (Artistic or GPL-1+) instead of MIT.
+
+ -- Axel Beckert <abe@debian.org>  Wed, 08 Nov 2017 01:11:05 +0100
+
+libtext-roman-perl (3.5-1) unstable; urgency=low
+
+  [ Martín Ferrari ]
+  * Now there is an unofficial release on CPAN, I'm putting the homepage and
+    the debian/watch file again.
+
+  [ Frank Lichtenheld ]
+  * build-stamp should depend on configure-stamp, not build.
+    binary-arch should not depend on clean. Also call
+    make as $(MAKE). Fixes parallel build. Found by Daniel Schepler.
+  * Add $(MAKE) test call. Actually touch build-stamp to not run
+    the tests twice.
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * Update Homepage field and remove pseudo-field from description.
+  * debian/rules: remove emtpy /usr/lib/perl5 directory.
+  * debian/rules: delete /usr/lib/perl5 only if it exists.
+  * debian/watch: use dist-based URL.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+
+  [ Axel Beckert ]
+  * Switch debian/watch and Homepage header to metacpan.org URLs
+    + Detects new upstream versions again
+  * New upstream release
+  * Rewrite (no more working) debian/rules from scratch with dh-style
+    debhelper (compatibility level 9)
+    + Remove Changes from debian/docs
+  * Remove empty directory /usr/share/perl5/Text/Roman/ in debian/rules
+  * Bump Standards-Version to 3.9.5 (no further changes)
+  * Rewrite short and long description based on upstream's README
+  * Switch to source format "3.0 (quilt)"
+  * Add myself as Uploader
+
+ -- Axel Beckert <abe@debian.org>  Mon, 23 Dec 2013 03:49:42 +0100
+
+libtext-roman-perl (3.3-4) unstable; urgency=low
+
+  * Bumped up standards-version to 3.7.2.2. No changes needed after four
+    years, go figure!
+  * Changed to group maintainership under the Pkg-perl group
+  * Upstream repository is gone; CPAN has only outdated packages.
+    Killing debian/watch, as it serves no purpose anymore
+
+ -- Gunnar Wolf <gwolf@debian.org>  Fri, 15 Jun 2007 18:43:56 -0500
+
+libtext-roman-perl (3.3-3) unstable; urgency=low
+
+  * Section change (interpreters -> perl)
+
+ -- Gunnar Wolf <gwolf@debian.org>  Thu, 19 Jun 2003 14:08:24 -0500
+
+libtext-roman-perl (3.3-2) unstable; urgency=low
+
+  * Changed the maintainer email address to the official Debian address
+
+ -- Gunnar Wolf <gwolf@debian.org>  Thu, 19 Jun 2003 13:29:47 -0500
+
+libtext-roman-perl (3.3-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Gunnar Wolf <gwolf@debian.org>  Fri, 25 Apr 2003 18:59:10 -0500
+
